@@ -1,12 +1,13 @@
 import './App.css'
+import MeapRouter from './MeapRouter';
+
 
 function App() {
-
   return (
-    <>
-      This is Project init 🚀
-    </>
+    <div>
+      <MeapRouter />
+    </div>
   )
 }
 
-export default App
+export default App;
