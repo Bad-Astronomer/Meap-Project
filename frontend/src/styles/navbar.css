@@ -1,31 +1,29 @@
-
-
 .navbar{
-    /* background-color: red; */
-    display: flex;
-    justify-content: center;
-    margin: 1.5rem 0;
     position: sticky;
-    top: 1.5rem;
-}
+    top: 1rem;
+    width: fit-content;
+    margin: 1rem auto;
 
-.navbar-contents{
     display: flex;
+    gap: 1.5rem;
     align-items: center;
-    /* height: 1.8rem; */
-    border: 1px solid rgba(255,255,255,0.1);
+
     border-radius: 30px;
+    border: 1px solid rgba(255,255,255,0.1);
     background-color: rgba(255, 255, 255, 0.08); 
     backdrop-filter: blur(10px);
-    padding: 0.3rem 0.5rem;
+
+    padding: 0.5rem;
+    padding-left: 1.5em;
 }
 
 .navbar-links{
     color: white;
     text-decoration: none;
-    padding: 10px;
     /* margin: 0 0.1rem; */
     transition: color 0.3s ease;
+    font-size: 0.875em;
+    padding: 0.5rem 0;
 }
 
 .navbar-links:hover{
@@ -33,18 +31,20 @@
 }
 
 .navbar-button{
+    scale: 0;
+    display: none;
+
     background-color: rgba(0,0,0,0.5);     
     color: white;
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0);
     padding: 0.5rem 1rem;
-    /* margin-left: 0.5rem; */
-    font-size: inherit;
+    font-size: 0.875em;
     transition: border 100ms ease-in;
+    text-decoration: none;
 }
 
 .navbar-button:hover{
     border: 1px solid rgba(255, 255, 255, 0.3);
     cursor: pointer;
-    /* font-size: inherit; */
 }
