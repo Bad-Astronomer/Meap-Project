@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Navbar from '../components/Navbar'
+
 
 const TutorialPage = () => {
   return (
-    <div>TutorialPage</div>
-  )
-}
+    <div>
+      <Navbar />
+      Tutorial
+    </div>
+  );
+};
 
-export default TutorialPage
+export default TutorialPage;

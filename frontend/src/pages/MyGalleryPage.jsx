@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import Navbar from '../components/Navbar'
 
 const MyGalleryPage = () => {
   return (
-    <div>MyGalleryPage</div>
-  )
-}
+    <div>
+      <Navbar />
+      My Gallery
+    </div>
+  );
+};
 
-export default MyGalleryPage
+export default MyGalleryPage;
