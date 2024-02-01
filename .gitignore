@@ -1,2 +1,7 @@
 node_modules
-
+python/model/__pycache__
+python/selected_train.json
+python/selected_captions.json
+python/test2.py
+python/test.jpg
+python/__pycache__
