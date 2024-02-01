@@ -18,7 +18,6 @@ class CocoDataset(Dataset):
         return len(self.ids) 
     
     def __getitem__(self, index):
-        id = self.ids[index]
         image = self._load_image(index)
         caption = self._load_caption(index)
         if self.transform:
@@ -30,5 +29,4 @@ class CocoDataset(Dataset):
         return Image.open(os.path.join(self.root, path)).convert("RGB")
 
     def _load_caption(self, index):
-        # print(self.data[self.ids[index]])
         return self.data[self.ids[index]]
