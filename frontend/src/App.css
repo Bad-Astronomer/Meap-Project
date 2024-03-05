@@ -1,21 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    /* width: 100vw; */
-    /* font-family: 'Arial', sans-serif; */
-    background-image: url('./assets/background.jpg'); /* Path to your image file */
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
-    /* backdrop-filter: brightness(40%); */
-    color: antiquewhite;
-    box-sizing: border-box;
-  }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  *{
+
+
+body{
+    /* background-color: rgb(149, 28, 165); */
+    height: 500vh;
+
+    background-color: black;
+}
+*{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-  }
+}
+
+
