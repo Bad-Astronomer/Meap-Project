@@ -5,11 +5,11 @@ body {
     padding: 0;
     height: 100vh;
     /* width: 100vw; */
-    font-family: 'Arial', sans-serif;
+    /* font-family: 'Arial', sans-serif; */
     background-image: url('./assets/background.jpg'); /* Path to your image file */
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     /* backdrop-filter: brightness(40%); */
     color: antiquewhite;
     box-sizing: border-box;

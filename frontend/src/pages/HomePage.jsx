@@ -13,10 +13,10 @@ const HomePage = () => {
       <PromptInput />
       <div>
         <ImageUploader />
-        <div>
-          <ColorizeButton />
+        {/* <div>
           <ColorizedImage />
-        </div>
+          <ColorizeButton />
+        </div> */}
       </div>
       <Gallery />
     </div>
