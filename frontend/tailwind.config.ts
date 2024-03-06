@@ -12,14 +12,28 @@ module.exports = {
       "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
       "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
       "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-   
+
       // Or if using `src` directory:
       "./src/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     darkMode: "class",
+
     theme: {
-      extend: {},
+      extend: {
+        //! Not working
+        filter: {
+          'saturate-0': 'saturate(0)',
+          'saturate-100': 'saturate(100)',
+        },
+      },
     },
+    variants: {
+      extend: {
+        //! Not working
+        filter: ['hover', 'focus'],
+      },
+    },
+
     plugins: [addVariablesForColors,
       function ({ matchUtilities, theme }: any) {
         matchUtilities(

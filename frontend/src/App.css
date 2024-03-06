@@ -9,7 +9,6 @@
 body{
     /* background-color: rgb(149, 28, 165); */
     height: 500vh;
-    overflow: scroll;
     background-color: black;
 }
 *{
