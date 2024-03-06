@@ -9,7 +9,7 @@
 body{
     /* background-color: rgb(149, 28, 165); */
     height: 500vh;
-
+    overflow: scroll;
     background-color: black;
 }
 *{
@@ -17,4 +17,14 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-
+@layer utilities {
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+     /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+    }
+  }
