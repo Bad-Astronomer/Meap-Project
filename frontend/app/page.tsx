@@ -1,8 +1,19 @@
-import { Navbar } from "./ui/Navbar";
+import Image from "next/image";
+import { Navbar } from "@/components/ui/Navbar";
+import { Gallery } from "@/components/ui/Gallery";
 
-const NavbarAfterLogin = () => {
+export default function Home() {
+  let img_urls:string[] = []
+  
+  for(let i=1; i<=18; i++){
+    img_urls.push(`/assets/${i}.jpg`)
+  }
+
+  console.log(img_urls)
+
   return (
-    <Navbar navItems={
+    <main>
+      <Navbar navItems={
         [
           {
             name: "Home",
@@ -26,7 +37,7 @@ const NavbarAfterLogin = () => {
         //   },
         ]
       }/>
-  )
+      <Gallery images={img_urls} />
+    </main>
+  );
 }
-
-export default NavbarAfterLogin

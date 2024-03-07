@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TEMP */
+
+body{
+    height: 500vh;
+    background-color: black;
+}
+  

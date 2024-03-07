@@ -7,8 +7,8 @@ import {
   useMotionValueEvent,
 } from "framer-motion";
 import { cn } from "../../utils/cn";
-// import Link from "next/link";
-import { Link } from "react-router-dom";
+import Link from "next/link";
+// import { Link } from "react-router-dom";
 
 
 export const Navbar = ({
@@ -66,7 +66,7 @@ export const Navbar = ({
         {navItems.map((navItem: any, idx: number) => (
           <Link
             key={`link=${idx}`}
-            to={navItem.link}
+            href={navItem.link}
             className={cn(
               "relative items-center flex space-x-1 text-white-600 hover:text-neutral-400 transition-colors duration-200"
             )}
