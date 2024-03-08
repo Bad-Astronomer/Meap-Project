@@ -1,13 +1,27 @@
+@import url('https://api.fontshare.com/v2/css?f[]=bebas-neue@400&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/*! TEMP */
+
 body{
-    /* height: 500vh; */
     background-color: black;
 }
 
+/* ScrollBar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #353535;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #e0e0e0;
+}
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .no-scrollbar::-webkit-scrollbar {
@@ -17,4 +31,16 @@ body{
 .no-scrollbar {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+}
+
+
+/* Selection */
+::selection {
+    background: rgb(32, 32, 32); 
+    color: white; 
+}
+
+/* Heading Font  */
+.meap-header {
+    font-family: var(--font-header);
 }

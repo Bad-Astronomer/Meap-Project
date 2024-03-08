@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Bebas_Neue } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+const bebas_neue = Bebas_Neue({ subsets: ['latin'], weight: '400', variable: "--font-header" })
 
 export const metadata: Metadata = {
   title: "Meap",
-  description: "meap",
+  description: "Meap",
 };
 
 export default function RootLayout({

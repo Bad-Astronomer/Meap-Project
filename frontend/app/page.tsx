@@ -34,6 +34,11 @@ export default function Home() {
         //   },
         ]
       }/>
+
+      <div className="py-20 my-8 text-neutral-200 text-5xl font-extrabold flex items-center justify-center w-full meap-header">
+        GALLERY
+      </div>
+
       <Gallery images={img_urls} />
     </main>
   );
