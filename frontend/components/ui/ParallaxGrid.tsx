@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { cn } from "@/utils/cn";
 
-export const Gallery = ({
+export const ParallaxGrid = ({
   images,
   className,
 }: {
