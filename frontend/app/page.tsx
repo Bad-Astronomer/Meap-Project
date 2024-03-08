@@ -1,15 +1,12 @@
-import Image from "next/image";
 import { Navbar } from "@/components/ui/Navbar";
 import { Gallery } from "@/components/ui/Gallery";
 
 export default function Home() {
-  let img_urls:string[] = []
+  let img_urls:string[] = [];
   
   for(let i=1; i<=18; i++){
-    img_urls.push(`/assets/${i}.jpg`)
+    img_urls.push(`/assets/${i}.jpg`);
   }
-
-  console.log(img_urls)
 
   return (
     <main>

@@ -1,5 +1,5 @@
 "use client";
-import { useScroll, useTransform } from "framer-motion";
+import { useScroll, useTransform, useSpring } from "framer-motion";
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -13,14 +13,16 @@ export const Gallery = ({
   className?: string;
 }) => {
   const gridRef = useRef<any>(null);
-  const { scrollYProgress } = useScroll({
-    container: gridRef, // remove this if your container is not fixed height
-    offset: ["start start", "end start"], // remove this if your container is not fixed height
+  let { scrollYProgress } = useScroll();
+  let smoothScrollYProgress = useSpring(scrollYProgress, {
+    stiffness: 300,
+    damping: 40,
+    restDelta: 0.001
   });
 
-  const translateFirst = useTransform(scrollYProgress, [0, 1], [0, -400]);
+  const translateFirst = useTransform(smoothScrollYProgress, [0, 1], [0, -400]);
   const translateSecond = useTransform(scrollYProgress, [0, 1], [0, 200]);
-  const translateThird = useTransform(scrollYProgress, [0, 1], [0, -400]);
+  const translateThird = useTransform(smoothScrollYProgress, [0, 1], [0, -400]);
 
   const third = Math.ceil(images.length / 3);
 
@@ -30,7 +32,7 @@ export const Gallery = ({
 
   return (
     <div
-      className={cn("h-[40rem] items-start overflow-y-auto w-full", className)}
+      className={cn("items-start overflow-y-auto w-full", className)}
       ref={gridRef}
     >
       <div
