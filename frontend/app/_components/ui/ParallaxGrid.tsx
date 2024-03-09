@@ -25,9 +25,9 @@ export const ParallaxGrid = ({
     restDelta: 0.001
   });
 
-  const translateFirst = useTransform(smoothScrollYProgress, [0, 1], [0, -400]);
-  const translateSecond = useTransform(scrollYProgress, [0, 1], [0, 200]);
-  const translateThird = useTransform(smoothScrollYProgress, [0, 1], [0, -400]);
+  const translateFirst = useTransform(smoothScrollYProgress, [0, 1], [0, -350]);
+  const translateSecond = useTransform(scrollYProgress, [0, 1], [0, 100]);
+  const translateThird = useTransform(smoothScrollYProgress, [0, 1], [0, -350]);
 
   const third = Math.ceil(images.length / 3);
 
@@ -41,7 +41,7 @@ export const ParallaxGrid = ({
       ref={gridRef}
     >
       <div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start  max-w-5xl mx-auto gap-10 pb-40 px-10"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start  max-w-6xl mx-auto gap-10 pb-20 px-10"
         ref={gridRef}
       >
         <div className="grid gap-10">

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Bebas_Neue } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/app/_components/ui/Navbar";
-
+import { Footer } from '@/app/_components/ui/Footer'
 
 const inter = Inter({ subsets: ["latin"] });
 const bebas_neue = Bebas_Neue({ subsets: ['latin'], weight: '400', variable: "--font-header" })
@@ -45,6 +45,7 @@ export default function RootLayout({
           ]
         }/>
         {children}
+        <Footer />
       </body>
     </html>
   );

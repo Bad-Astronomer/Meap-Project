@@ -1,7 +1,6 @@
 import React from 'react'
 import { ParallaxGrid } from '@/app/_components/ui/ParallaxGrid'
 import '@/app/globals.css'; 
-import '@/app/_components/ui/DotBackground'
  
 
 const page = () => {
@@ -16,7 +15,9 @@ const page = () => {
             <div className="py-20 my-8 text-neutral-200 text-5xl font-bold flex items-center meap-header justify-center w-full">
                 GALLERY
             </div> 
+            
             <ParallaxGrid images={img_urls} />
+
         </>
     )
 }
