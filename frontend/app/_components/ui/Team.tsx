@@ -20,7 +20,7 @@ export const Team = () => {
     {
       id: 2,
       name: "Kedar",
-      designation: "BAD astronomer",
+      designation: "no",
       image: "/assets/1.jpg",
     },
     {
