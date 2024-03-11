@@ -30,7 +30,7 @@ export default function RootLayout({
             },
             {
               name: "Tutorial",
-              link: ""
+              link: "/"
             },
             {
               name: "My Gallery",
