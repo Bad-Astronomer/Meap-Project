@@ -84,7 +84,7 @@ export const NavbarFloating = ({
         <Link
             href={"/login"}
             className={cn(
-              "border border-transparent text-sm font-medium relative  text-white px-4 py-2 rounded-full bg-black hover:border hover:border-neutral-500 transition-colors duration-200"
+              "border border-transparent text-sm font-medium relative text-white px-4 py-2 rounded-full bg-black hover:border hover:border-neutral-500 transition-colors duration-200"
             )}
           >
             <span>Logout</span>

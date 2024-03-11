@@ -4,10 +4,10 @@ import { Label } from "@/app/_components/ui/Label";
 import { Input } from "@/app/_components/ui/Input";
 import { cn } from "@/utils/cn";
 import {
-    IconBrandGithub,
-    IconBrandGoogle,
-    IconBrandOnlyfans,
-  } from "@tabler/icons-react";
+  IconBrandGithub,
+  IconBrandGoogle,
+  IconBrandOnlyfans,
+} from "@tabler/icons-react";
 
 export default function LoginForm() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -17,14 +17,14 @@ export default function LoginForm() {
   return (
     <div>
         <div className="my-12 text-neutral-200 text-5xl font-bold flex items-center meap-header justify-center w-full">
-                    Login
+                    Sign Up for Meap
                 </div> 
         <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-black border border-neutral-800 m-8 mb-12">
         <h2 className="font-bold text-xl text-neutral-200">
             Welcome to Meap
         </h2>
         <p className="text-sm max-w-sm mt-2 text-neutral-300">
-            Login to Meap for a customized colorization experience
+          Sign up to Meap for a customized colorization experience
         </p>
 
         <form className="mt-8" onSubmit={handleSubmit}>
@@ -42,10 +42,10 @@ export default function LoginForm() {
             <Label htmlFor="email">Username</Label>
             <Input id="email" placeholder="Meap" type="username" />
             </LabelInputContainer>
-            {/* <LabelInputContainer className="mb-4">
+            <LabelInputContainer className="mb-4">
             <Label htmlFor="email">Email Address</Label>
             <Input id="email" placeholder="meap@gmail.com" type="email" />
-            </LabelInputContainer> */}
+            </LabelInputContainer>
             <LabelInputContainer className="mb-4">
             <Label htmlFor="password">Password</Label>
             <Input id="password" placeholder="••••••••" type="password" />
@@ -57,12 +57,10 @@ export default function LoginForm() {
             //   className="bg-gradient-to-br relative group/btn from-zinc-900 to-zinc-900 block bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
             type="submit"
             >
-            Login &rarr;
-            <BottomGradient />
+            Sign up &rarr;
             </button>
 
-            
-            <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mb-8 mt-4 h-[1px] w-full" />
+            <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-4 mb-8 h-[1px] w-full" />
 
             <button
                 className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-zinc-900 shadow-[0px_0px_1px_1px_var(--neutral-800)] flex justify-center hover:border hover:border-neutral-500"
@@ -70,11 +68,9 @@ export default function LoginForm() {
             >
                 <IconBrandGoogle className="h-4 w-4 text-neutral-300 " />
                 <span className="text-neutral-300 text-sm ">
-                Login using Google
+                Sign up using Google
                 </span>
             </button>
-
-            {/* <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent my-8 h-[1px] w-full" /> */}
 
             {/* <div className="flex flex-col space-y-4">
             <button
@@ -114,14 +110,14 @@ export default function LoginForm() {
   );
 }
 
-const BottomGradient = () => {
-  return (
-    <>
-      <span className="group-hover/btn:opacity-100 block transition duration-500 opacity-0 absolute h-px w-full -bottom-px inset-x-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
-      <span className="group-hover/btn:opacity-100 blur-sm block transition duration-500 opacity-0 absolute h-px w-1/2 mx-auto -bottom-px inset-x-10 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
-    </>
-  );
-};
+// const BottomGradient = () => {
+//   return (
+//     <>
+//       <span className="group-hover/btn:opacity-100 block transition duration-500 opacity-0 absolute h-px w-full -bottom-px inset-x-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
+//       <span className="group-hover/btn:opacity-100 blur-sm block transition duration-500 opacity-0 absolute h-px w-1/2 mx-auto -bottom-px inset-x-10 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
+//     </>
+//   );
+// };
 
 const LabelInputContainer = ({
   children,

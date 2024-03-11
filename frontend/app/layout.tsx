@@ -3,6 +3,7 @@ import { Inter, Bebas_Neue } from "next/font/google";
 import "./globals.css";
 import { NavbarFloating } from "@/app/_components/ui/NavbarFloating";
 import { Footer } from '@/app/_components/ui/Footer'
+import { Navbar } from "./_components/ui/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 const bebas_neue = Bebas_Neue({ subsets: ['latin'], weight: '400', variable: "--font-header" })
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <Navbar />
         <NavbarFloating navItems={  
           [
             {
