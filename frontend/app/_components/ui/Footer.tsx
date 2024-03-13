@@ -5,7 +5,7 @@ import { Team } from '@/app/_components/ui/Team'
 
 export const Footer = () => {
 return (
-    <footer className="w-4/5 m-auto py-16 border-t border-neutral-800">
+    <footer className="w-full pb-12 pt-10 border-t border-neutral-800">
       <div className="md:px-12 lg:px-28">
         <div className="container m-auto space-y-6 text-gray-300">
           <div className="flex items-center justify-center text-xl">
@@ -29,7 +29,7 @@ return (
         </div>
       </div>
     </footer>
- );
+  );
 };
 
 

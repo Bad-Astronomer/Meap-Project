@@ -16,7 +16,7 @@ export default function LoginForm() {
   };
   return (
     <div>
-        <div className="my-12 text-neutral-200 text-5xl font-bold flex items-center meap-header justify-center w-full">
+        <div className="my-12 text-neutral-200 text-5xl font-bold flex items-center justify-center w-full">
                     Sign Up for Meap
                 </div> 
         <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-black border border-neutral-800 m-8 mb-12">
@@ -42,10 +42,12 @@ export default function LoginForm() {
             <Label htmlFor="email">Username</Label>
             <Input id="email" placeholder="Meap" type="username" />
             </LabelInputContainer>
+
             <LabelInputContainer className="mb-4">
             <Label htmlFor="email">Email Address</Label>
             <Input id="email" placeholder="meap@gmail.com" type="email" />
             </LabelInputContainer>
+
             <LabelInputContainer className="mb-4">
             <Label htmlFor="password">Password</Label>
             <Input id="password" placeholder="••••••••" type="password" />

@@ -20,13 +20,13 @@ export const Team = () => {
     {
       id: 2,
       name: "Kedar",
-      designation: "no",
+      designation: "Bad Astronomer",
       image: "/assets/1.jpg",
     },
     {
       id: 3,
       name: "Hinamshu",
-      designation: "Professional offender",
+      designation: "Professional Offender",
       image: "/assets/8.jpg",
     },
   ];
