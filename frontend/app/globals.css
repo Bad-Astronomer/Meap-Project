@@ -5,7 +5,13 @@
 
 
 body{
-    background-color: black;
+    background: linear-gradient(#010110, black, #010110);
+}
+
+.stars-bg{
+    background: url('../public/assets/stars-bg.png');
+    background-size: 1300px;
+    background-position: 40%;
 }
 
 /* ScrollBar */

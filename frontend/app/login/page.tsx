@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import { Label } from "@/app/_components/ui/Label";
 import { Input } from "@/app/_components/ui/Input";
@@ -8,6 +9,9 @@ import {
     IconBrandGoogle,
     IconBrandOnlyfans,
   } from "@tabler/icons-react";
+
+import { signIn } from "next-auth/react";
+import { redirect } from "next/navigation";
 
 export default function LoginForm() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -70,7 +74,23 @@ export default function LoginForm() {
             >
                 <IconBrandGoogle className="h-4 w-4 text-neutral-300 " />
                 <span className="text-neutral-300 text-sm ">
-                Login using Google
+                Google
+                </span> 
+            </button>
+
+            <button
+                className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-zinc-900 shadow-[0px_0px_1px_1px_var(--neutral-800)] flex justify-center hover:border hover:border-neutral-500 mt-4"
+                type="submit"
+                onClick={async () => {
+                  // "use server";
+                  await signIn()
+                  redirect('/gallery')
+                }
+              }
+            >
+                <IconBrandGithub className="h-4 w-4 text-neutral-300" />
+                <span className="text-neutral-300 text-sm">
+                GitHub
                 </span>
             </button>
 
