@@ -78,7 +78,7 @@ export default function LoginForm() {
             <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-4 mb-8 h-[1px] w-full" />
 
             <button
-                className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-zinc-900 shadow-[0px_0px_1px_1px_var(--neutral-800)] flex justify-center hover:border hover:border-neutral-500"
+                className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-zinc-900 shadow-[0px_0px_1px_1px_var(--neutral-800)] flex justify-center hover:border hover:border-teal-500 transition-colors duration-200 hover:bg-black"
                 type="submit"
             >
                 <IconBrandGoogle className="h-4 w-4 text-neutral-300 " />
@@ -88,7 +88,7 @@ export default function LoginForm() {
             </button>
 
             <button
-                className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-zinc-900 shadow-[0px_0px_1px_1px_var(--neutral-800)] flex justify-center hover:border hover:border-neutral-500 mt-4"
+                className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-zinc-900 shadow-[0px_0px_1px_1px_var(--neutral-800)] flex justify-center hover:border hover:border-teal-500 transition-colors duration-200 hover:bg-black mt-4"
                 type="submit"
                 onClick={() => {
                   signIn();

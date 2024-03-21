@@ -10,10 +10,10 @@ const NavbarButtons = () => {
     return (
       <>
       <div className="flex space-x-4">
-        <Link href="/home" className="relative items-center flex space-x-1 text-white-600 hover:text-neutral-400 transition-colors duration-200">Home</Link>
-        <Link href="/" className="relative items-center flex space-x-1 text-white-600 hover:text-neutral-400 transition-colors duration-200">Tutorial</Link>
-        <Link href="/gallery" className="relative items-center flex space-x-1 text-white-600 hover:text-neutral-400 transition-colors duration-200">My Gallery</Link>
-        <Link href="/about_us" className="relative items-center flex space-x-1 text-white-600 hover:text-neutral-400 transition-colors duration-200">About Us</Link>
+        <Link href="/home" className="relative items-center flex space-x-1 text-neutral-400 hover:text-white transition-colors duration-200">Home</Link>
+        <Link href="/" className="relative items-center flex space-x-1 text-neutral-400 hover:text-white transition-colors duration-200">Tutorial</Link>
+        <Link href="/gallery" className="relative items-center flex space-x-1 text-neutral-400 hover:text-white transition-colors duration-200">My Gallery</Link>
+        <Link href="/about_us" className="relative items-center flex space-x-1 text-neutral-400 hover:text-white transition-colors duration-200">About Us</Link>
       </div>
       <Link
         href={"/login"}
@@ -31,10 +31,10 @@ const NavbarButtons = () => {
   return (
     <>
       <div className="flex space-x-4">
-        <Link href="/home" className="relative items-center flex space-x-1 text-white-600 hover:text-neutral-400 transition-colors duration-200">Home</Link>
-        <Link href="/" className="relative items-center flex space-x-1 text-white-600 hover:text-neutral-400 transition-colors duration-200">Tutorial</Link>
-        <Link href="/gallery" className="relative items-center flex space-x-1 text-white-600 hover:text-neutral-400 transition-colors duration-200">Gallery</Link>
-        <Link href="/about_us" className="relative items-center flex space-x-1 text-white-600 hover:text-neutral-400 transition-colors duration-200">About Us</Link>
+        <Link href="/home" className="relative items-center flex space-x-1 text-neutral-400 hover:text-white transition-colors duration-200">Home</Link>
+        <Link href="/" className="relative items-center flex space-x-1 text-neutral-400 hover:text-white transition-colors duration-200">Tutorial</Link>
+        <Link href="/gallery" className="relative items-center flex space-x-1 text-neutral-400 hover:text-white transition-colors duration-200">Gallery</Link>
+        <Link href="/about_us" className="relative items-center flex space-x-1 text-neutral-400 hover:text-white transition-colors duration-200">About Us</Link>
       </div>
       <div>
       <Link
@@ -63,7 +63,7 @@ export const Navbar = () => {
   return (
     <div className="h-20 flex items-center justify-between px-8 text-white border border-neutral-800 border-b-neutral-800 border-x-0 border-t-0 ">
       {/* <div className="flex justify-between"> */}
-      <Link href={"/"} className="font-medium text-white text-xl px-12">
+      <Link href={"/"} className="font-bold text-xl px-12 meap-header">
         Meap
       </Link>
       <NavbarButtons/>

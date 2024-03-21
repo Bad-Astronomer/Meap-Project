@@ -24,7 +24,7 @@ const Home_after_auth = () => {
   };
 
   return (
-    <div className="w-auto flex items-center justify-center gap-4 m-8">
+    <div className="w-auto flex items-center justify-center gap-4 m-20">
       <div className="h-96 w-2/5 border border-neutral-700 rounded-xl relative p-8 backdrop-blur-[1px]">
         {imageSelected ? (
           <div className="relative h-full w-full">
