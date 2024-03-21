@@ -25,7 +25,7 @@ const Home_after_auth = () => {
 
   return (
     <div className="w-auto flex items-center justify-center gap-4 m-8">
-      <div className="h-96 w-2/5 border border-neutral-700 rounded-xl relative p-8">
+      <div className="h-96 w-2/5 border border-neutral-700 rounded-xl relative p-8 backdrop-blur-[1px]">
         {imageSelected ? (
           <div className="relative h-full w-full">
             <Image
@@ -36,10 +36,10 @@ const Home_after_auth = () => {
             />
           </div>
         ) : (
-          <div className="relative flex items-center justify-center">
+          <div className="relative flex items-center justify-center h-full w-full">
             <label htmlFor="imageUpload" className="cursor-pointer">
               <p
-                className="text-neutral-600 text-6xl"
+                className="text-neutral-600 text-5xl text-center"
               >
                 Click to add <br /> your image here!
               </p>
@@ -53,10 +53,10 @@ const Home_after_auth = () => {
           className="absolute inset-0 opacity-0 cursor-pointer"
         />
       </div>
-      <div className="h-96 w-1/6 block border border-neutral-700 rounded-xl flex flex-col">
+      <div className="h-96 w-1/6 block border border-neutral-700 rounded-xl flex flex-col backdrop-blur-[3px]">
         <div className="basis-5/6 w-auto m-4 rounded-xl text-black bg-neutral-900 text-white">
           <textarea
-            placeholder="Quick brown fox jumps over the lazy dog"
+            placeholder="Image of a golden retriever dog looking out the window into the autumn seasoned forest"
             className=" resize-none w-full h-full p-4 bg-transparent border-none text-black outline-none text-white"
           ></textarea>
         </div>

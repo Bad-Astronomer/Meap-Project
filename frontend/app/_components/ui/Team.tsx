@@ -21,13 +21,13 @@ export const Team = () => {
       id: 2,
       name: "Kedar",
       designation: "Bad Astronomer",
-      image: "/assets/1.jpg",
+      image: "/assets/kedar.jpeg",
     },
     {
       id: 3,
       name: "Hinamshu",
       designation: "Professional Offender",
-      image: "/assets/8.jpg",
+      image: "/assets/himanshu.jpg",
     },
   ];
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);

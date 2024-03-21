@@ -24,7 +24,7 @@ return (
             Social media icons and links
           </div> */}
           <div className="text-center">
-            <span className="text-sm tracking-wide">Copyright © meap <span id="year"></span> | All right reserved</span>
+            <span className="text-sm tracking-wide">Copyright © meap <span id="year"></span> | No rights reserved</span>
           </div>
         </div>
       </div>

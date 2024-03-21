@@ -3,7 +3,7 @@ import React from "react";
 import { useSession } from "next-auth/react";
 import Home_after_auth from './Home_after_auth'; // Assuming this is your component for logged-in users
 
-const page = () => {
+const Page = () => {
  const { data: session } = useSession();
 
  if (session) {
@@ -14,10 +14,10 @@ const page = () => {
  // If the user is not logged in, render a message or a different component
  return (
     <div>
-      <p>Please log in to access the home page.</p>
+      <p>Please log in to access the home Page.</p>
       {/* Optionally, include links to login or signup pages */}
     </div>
  );
 };
 
-export default page;
+export default Page;

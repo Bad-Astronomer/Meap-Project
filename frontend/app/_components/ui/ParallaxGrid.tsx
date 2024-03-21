@@ -46,14 +46,14 @@ export const ParallaxGrid = ({
           {firstPart.map((el, idx) => (
             <div className="group" key={"grid-1" + idx}>
               <motion.div style={{ y: translateFirst }}>
-                <p className="text-white pointer-events-none absolute text-justify text-md transition duration-300 delay-100 p-4 bottom-0 z-10 opacity-0 group-hover:opacity-100 bg-black/[0.5] border border-transparent hover:border-white/[0.5] backdrop-filter backdrop-blur-[3px] m-1px rounded-md">
+                <p className="text-white pointer-events-none absolute text-justify text-md transition duration-300 delay-100 p-4 bottom-0 z-10 opacity-0 group-hover:opacity-100 bg-black/[0.5] backdrop-filter backdrop-blur-[3px] m-4 rounded-md">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Obcaecati sed culpa minus ratione id accusantium. Voluptatem
                   cumque aut eaque, repellendus
                 </p>
                 <Image
                   src={el}
-                  className="h-full w-full object-cover object-left-top rounded-lg z-0 gap-10 !m-0 !p-0 hover:saturate-0 border border-transparent hover:border-white hover:border-opacity-50 transition duration-200"
+                  className="h-full w-full object-cover object-left-top rounded-lg z-0 gap-10 !m-0 !p-0 hover:saturate-0 border border-transparent hover:border-white/[0.75] transition duration-200"
                   height="400"
                   width="400"
                   alt="thumbnail"
@@ -66,14 +66,14 @@ export const ParallaxGrid = ({
           {secondPart.map((el, idx) => (
             <div className="group" key={"grid-2" + idx}>
               <motion.div style={{ y: translateSecond }}>
-                <p className="text-white pointer-events-none absolute text-justify text-md transition duration-300 delay-100 p-4 bottom-0 z-10 opacity-0 group-hover:opacity-100 bg-black/[0.5] border border-transparent hover:border-white/[0.5] backdrop-filter backdrop-blur-[3px] m-1px rounded-md">
+                <p className="text-white pointer-events-none absolute text-justify text-md transition duration-300 delay-100 p-4 bottom-0 z-10 opacity-0 group-hover:opacity-100 bg-black/[0.5] border-white/[0.75] backdrop-filter backdrop-blur-[3px] m-4 rounded-md">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Obcaecati sed culpa minus ratione id accusantium. Voluptatem
                   cumque aut eaque, repellendus
                 </p>
                 <Image
                   src={el}
-                  className="h-full w-full object-cover object-left-top rounded-lg z-0 gap-10 !m-0 !p-0 hover:saturate-0 border border-transparent hover:border-white hover:border-opacity-50 transition duration-200"
+                  className="h-full w-full object-cover object-left-top rounded-lg z-0 gap-10 !m-0 !p-0 hover:saturate-0 border border-transparent hover:border-white/[0.75] transition duration-200"
                   height="400"
                   width="400"
                   alt="thumbnail"
@@ -86,14 +86,14 @@ export const ParallaxGrid = ({
           {thirdPart.map((el, idx) => (
             <div className="group" key={"grid-3" + idx}>
               <motion.div style={{ y: translateThird }}>
-                <p className="text-white pointer-events-none absolute text-justify text-md transition duration-300 delay-100 p-4 bottom-0 z-10 opacity-0 group-hover:opacity-100 bg-black/[0.5] border border-transparent hover:border-white/[0.5] backdrop-filter backdrop-blur-[3px] m-1px rounded-md">
+                <p className="text-white pointer-events-none absolute text-justify text-md transition duration-300 delay-100 p-4 bottom-0 z-10 opacity-0 group-hover:opacity-100 bg-black/[0.5] border-white/[0.75] backdrop-filter backdrop-blur-[3px] m-4 rounded-md">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Obcaecati sed culpa minus ratione id accusantium. Voluptatem
                   cumque aut eaque, repellendus
                 </p>
                 <Image
                   src={el}
-                  className="h-full w-full object-cover object-left-top rounded-lg z-0 gap-10 !m-0 !p-0 hover:saturate-0 border border-transparent hover:border-white hover:border-opacity-50 transition duration-200"
+                  className="h-full w-full object-cover object-left-top rounded-lg z-0 gap-10 !m-0 !p-0 hover:saturate-0 border border-transparent hover:border-white/[0.75] transition duration-200"
                   height="400"
                   width="400"
                   alt="thumbnail"
