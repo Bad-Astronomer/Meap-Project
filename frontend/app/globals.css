@@ -1,7 +1,44 @@
-/* @import url('https://api.fontshare.com/v2/css?f[]=bebas-neue@400&display=swap'); */
+@import url('https://api.fontshare.com/v2/css?f[]=bebas-neue@400&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    /* Heading Font  */
+    .meap-header {
+        /* font-family: 'Space Mono', monospace; */
+        font-family: 'Bebas Neue', sans-serif;
+    }
+
+    .gradient-button{
+        position: relative;
+        overflow: hidden;
+    }
+    .gradient-button::before{
+        position: absolute;
+        content: "";
+        background: white;
+        height: 100%;
+        width: 200%;
+        inset: 0 0;
+        z-index: -1;
+    }
+    .gradient-button:hover::before{
+        background: linear-gradient(to right, rgb(0, 143, 193), rgb(0, 240, 153), rgb(0, 143, 193), rgb(0, 240, 153)) 0% 0% / 150% 100%;
+        animation: gradient-button-animation 200ms ease-in;
+    }
+
+    @keyframes gradient-button-animation {
+        from{
+            background-position: 200%;
+        }
+        to{
+            background-position: 0%;
+        }
+    }
+
+}
 
 
 body{
@@ -46,7 +83,4 @@ body{
     color: white; 
 }
 
-/* Heading Font  */
-.meap-header {
-    font-family: var(--font-header);
-}
+

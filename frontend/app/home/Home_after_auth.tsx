@@ -60,7 +60,8 @@ const Home_after_auth = () => {
             className=" resize-none w-full h-full p-4 bg-transparent border-none text-black outline-none text-white"
           ></textarea>
         </div>
-        <button className="bg-neutral-900 basis-1/6 w-auto m-4 mt-0 text-neutral-200 font-bold py-2 px-4 rounded-xl">
+        {/* className="bg-zinc-900 hover:bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% transition-colors duration-200 basis-1/6 w-auto m-4 mt-0 text-neutral-200 font-bold py-2 px-4 rounded-xl" */}
+        <button className="gradient-button basis-1/6 w-auto m-4 mt-0 font-bold py-2 px-4 rounded-xl text-zinc-900">
           Generate
         </button>
         {/* <button className="bg-neutral-200 basis-1/6 w-auto m-4 mt-0 text-neutral-800 font-bold py-2 px-4 rounded-xl">
