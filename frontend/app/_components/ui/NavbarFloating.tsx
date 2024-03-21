@@ -8,7 +8,35 @@ import {
 } from "framer-motion";
 import { cn } from "@/utils/cn";
 import Link from "next/link";
-// import { Link } from "react-router-dom";
+import { signIn, signOut, useSession } from "next-auth/react";
+
+
+const NavbarButtons = () => {
+  const { data: session } = useSession();
+  if (session) {
+    return (
+      <Link
+        href={"/login"}
+        className={cn(
+          "border border-transparent text-sm font-medium relative text-white px-4 py-2 rounded-full bg-black hover:border hover:border-neutral-500 transition-colors duration-200"
+        )}
+        onClick={() => signOut()}
+      >
+        <span>Logout</span>
+      </Link>
+    );
+  }
+  return (
+      <Link
+        href={"/login"}
+        className={cn(
+          "border border-transparent text-sm font-medium relative text-white px-4 py-2 rounded-full bg-black hover:border hover:border-neutral-500 transition-colors duration-200"
+        )}
+      >
+        <span>Login</span>
+      </Link>
+  );
+};
 
 
 export const NavbarFloating = ({
@@ -81,14 +109,7 @@ export const NavbarFloating = ({
           <span>Logout</span>
           <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
         </button> */}
-        <Link
-            href={"/login"}
-            className={cn(
-              "border border-transparent text-sm font-medium relative text-white px-4 py-2 rounded-full bg-black hover:border hover:border-neutral-500 transition-colors duration-200"
-            )}
-          >
-            <span>Logout</span>
-          </Link>
+        <NavbarButtons/>
       </motion.div>
     </AnimatePresence>
   );

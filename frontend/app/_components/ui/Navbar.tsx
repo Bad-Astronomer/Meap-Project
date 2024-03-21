@@ -50,7 +50,7 @@ export const Navbar = () => {
       <Link href={"/"} className="font-medium text-white text-xl">
         Meap
       </Link>
-      <NavbarButtons></NavbarButtons>
+      <NavbarButtons/>
       {/* <div>
         <Link
           href={"/signup"}
