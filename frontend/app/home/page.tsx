@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
 import { useSession } from "next-auth/react";
-import Home_after_auth from './home_after_auth'; // Assuming this is your component for logged-in users
+import Home_after_auth from './Home_after_auth'; // Assuming this is your component for logged-in users
 
-const HomePage = () => {
+const page = () => {
  const { data: session } = useSession();
 
  if (session) {
@@ -20,4 +20,4 @@ const HomePage = () => {
  );
 };
 
-export default HomePage;
+export default page;
