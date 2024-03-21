@@ -1,6 +1,5 @@
 import React from 'react'
 import { ParallaxGrid } from '@/app/_components/ui/ParallaxGrid'
-import '@/app/globals.css'; 
 import { getServerSession } from 'next-auth';
 import { redirect } from 'next/navigation';
 
