@@ -19,7 +19,7 @@ const NavbarButtons = () => {
         href={"/login"}
         className={cn(
           // "border border-transparent text-sm font-medium relative  text-white px-4 py-2 rounded-full bg-black hover:border hover:border-neutral-500 transition-colors duration-200"
-          "border border-transparent text-sm font-medium relative text-white px-4 mx-6 py-2 rounded-full hover:border hover:border-neutral-500 transition-colors duration-200 bg-neutral-800"
+          "border border-transparent text-sm font-medium relative text-white px-4 mx-8 py-2 rounded-full hover:border hover:border-neutral-500 transition-colors duration-200 bg-neutral-800"
         )}
         onClick={() => signOut()}
       >

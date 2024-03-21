@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { Label } from "@/app/_components/ui/Label";
 import { Input } from "@/app/_components/ui/Input";
 import { cn } from "@/utils/cn";
@@ -10,9 +10,19 @@ import {
 } from "@tabler/icons-react";
 
 import { signIn } from "next-auth/react";
-
+import { redirect } from "next/navigation";
+import { useSession } from 'next-auth/react';
 
 export default function LoginForm() {
+  const { data: session } = useSession();
+
+  useEffect(() => {
+    if (session) {
+      // router.push('/home');
+      redirect("/home");
+    }
+  }, [session]);
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form submitted");
