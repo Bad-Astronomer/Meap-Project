@@ -9,6 +9,9 @@ import {
   IconBrandOnlyfans,
 } from "@tabler/icons-react";
 
+import { signIn } from "next-auth/react";
+
+
 export default function LoginForm() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -71,6 +74,20 @@ export default function LoginForm() {
                 <IconBrandGoogle className="h-4 w-4 text-neutral-300 " />
                 <span className="text-neutral-300 text-sm ">
                 Sign up using Google
+                </span>
+            </button>
+
+            <button
+                className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-zinc-900 shadow-[0px_0px_1px_1px_var(--neutral-800)] flex justify-center hover:border hover:border-neutral-500 mt-4"
+                type="submit"
+                onClick={() => {
+                  signIn();
+                }
+              }
+            >
+                <IconBrandGithub className="h-4 w-4 text-neutral-300" />
+                <span className="text-neutral-300 text-sm">
+                Sign up with GitHub
                 </span>
             </button>
 

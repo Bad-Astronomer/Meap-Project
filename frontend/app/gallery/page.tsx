@@ -1,9 +1,17 @@
 import React from 'react'
 import { ParallaxGrid } from '@/app/_components/ui/ParallaxGrid'
 import '@/app/globals.css'; 
- 
+import { getServerSession } from 'next-auth';
+import { redirect } from 'next/navigation';
 
-const page = () => {
+
+const page = async () => {
+    const session = await getServerSession();
+    if (!session || !session.user){
+        redirect("/signup")
+    }
+
+
     let img_urls:string[] = [];
 
     for(let i=1; i<=18; i++){
