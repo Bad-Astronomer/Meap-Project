@@ -21,7 +21,7 @@ const Home_before_auth = () => {
         //border border-y-transparent
         <div className='w-4/5 mx-auto p-20 pt-0'>
             <div className="mt-5 flex justify-center items-center flex-col pt-16 max-w-4xl m-auto border border-white/[0.2] rounded-xl">
-                <p className='pt-16 h-20 text-white/[0.75] text-6xl font-bold text-center transform translate-y-12 z-10'>
+                <p className='pt-16 h-0 text-white/[0.75] text-6xl font-bold text-center transform translate-y-12 z-10'>
                     <span className='meap-header'>Color</span> it like <br />
                     you <span className='meap-header'>{titles[titleIndex]}</span> it.
                 </p>
