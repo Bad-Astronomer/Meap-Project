@@ -29,7 +29,7 @@ export function BentoGridHome() {
     );
 }
 const Skeleton = () => (
-    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-dot-white/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-transparent border-white/[0.2] bg-black"></div>
+    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-dot-white/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-white/[0.2] bg-black"></div>
 );
 
 const SkeletonOne = () => {
@@ -197,10 +197,10 @@ const SkeletonFour = () => {
             className="rounded-full h-10 w-10"
             />
             <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-            Just code in Vanilla Javascript
+            Black & White
             </p>
             <p className="border border-red-500 bg-red-900/20 text-red-600 text-xs rounded-full px-2 py-0.5 mt-4">
-            Delusional
+            Bad
             </p>
         </motion.div>
         <motion.div className="h-full relative z-20 w-1/3 rounded-2xl p-4 bg-black border-white/[0.1] border flex flex-col items-center justify-center">
@@ -212,10 +212,10 @@ const SkeletonFour = () => {
             className="rounded-full h-10 w-10"
             />
             <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-            Tailwind CSS is cool, you know
+            Golden dog and white background.
             </p>
             <p className="border border-green-500 bg-green-900/20 text-green-600 text-xs rounded-full px-2 py-0.5 mt-4">
-            Sensible
+            Good
             </p>
         </motion.div>
         <motion.div
@@ -230,10 +230,10 @@ const SkeletonFour = () => {
             className="rounded-full h-10 w-10"
             />
             <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-            I love angular, RSC, and Redux.
+            Colorize the Image.
             </p>
             <p className="border border-orange-500 bg-orange-900/20 text-orange-600 text-xs rounded-full px-2 py-0.5 mt-4">
-            Helpless
+            Decent
             </p>
         </motion.div>
         </motion.div>
@@ -299,10 +299,10 @@ const SkeletonFive = () => {
     };
     const items = [
     {
-        title: "AI Content Generation",
+        title: "Open Gallery",
         description: (
         <span className="text-sm">
-            Experience the power of AI in generating unique content.
+            Get to share your memories & creations with others.
         </span>
         ),
         header: <SkeletonOne />,
@@ -310,10 +310,10 @@ const SkeletonFive = () => {
         icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
     },
     {
-        title: "Automated Proofreading",
+        title: "Contextual Suggestions",
         description: (
         <span className="text-sm">
-            Let AI handle the proofreading of your documents.
+            Get AI-powered suggestions based on your image prompt.
         </span>
         ),
         header: <SkeletonTwo />,
@@ -321,10 +321,10 @@ const SkeletonFive = () => {
         icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
     },
     {
-        title: "Contextual Suggestions",
+        title: "Automated Colorizer",
         description: (
         <span className="text-sm">
-            Get AI-powered suggestions based on your writing context.
+            Let AI handle the colors while all you provide is an image and prompt.
         </span>
         ),
         header: <SkeletonThree />,
@@ -332,10 +332,10 @@ const SkeletonFive = () => {
         icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
     },
     {
-        title: "Sentiment Analysis",
+        title: "Prompt Engineering",
         description: (
         <span className="text-sm">
-            Understand the sentiment of your text with AI analysis.
+            Understand what prompts are the best for your image with AI analysis.
         </span>
         ),
         header: <SkeletonFour />,
