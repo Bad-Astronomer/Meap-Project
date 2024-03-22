@@ -68,7 +68,7 @@ const SkeletonOne = () => {
             variants={variants}
             className="flex flex-row rounded-full border border-white/[0.2] p-2  items-center space-x-2 bg-black"
         >
-            <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
+            <div className="h-6 w-6 rounded-full gradient from-pink-500 to-violet-500 flex-shrink-0" />
             <div className="w-full h-4 rounded-full bg-neutral-900" />
         </motion.div>
         <motion.div
@@ -76,13 +76,13 @@ const SkeletonOne = () => {
             className="flex flex-row rounded-full border border-white/[0.2] p-2 items-center space-x-2 w-3/4 ml-auto bg-black"
         >
             <div className="w-full h-4 rounded-full bg-neutral-900" />
-            <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
+            <div className="h-6 w-6 rounded-full gradient from-pink-500 to-violet-500 flex-shrink-0" />
         </motion.div>
         <motion.div
             variants={variants}
             className="flex flex-row rounded-full border border-white/[0.2] p-2 items-center space-x-2 bg-black"
         >
-            <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
+            <div className="h-6 w-6 rounded-full gradient from-pink-500 to-violet-500 flex-shrink-0" />
             <div className="w-full h-4 rounded-full bg-neutral-900" />
         </motion.div>
         </motion.div>
@@ -142,14 +142,15 @@ const SkeletonThree = () => {
         animate="animate"
         variants={variants}
         transition={{
-            duration: 5,
+            duration: 1,
             repeat: Infinity,
-            repeatType: "reverse",
+            // repeatType: "reverse",
         }}
         className="flex flex-1 w-full h-full min-h-[6rem] bg-dot-white/[0.2] rounded-lg flex-col space-y-2"
         style={{
             background:
-            "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)",
+            // "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)",
+            "linear-gradient(-45deg, #008FBE, #00F099, #008FBE, #00F099)",
             backgroundSize: "400% 400%",
         }}
         >
@@ -292,7 +293,7 @@ const SkeletonFive = () => {
             className="flex flex-row rounded-full border border-white/[0.2] p-2 items-center justify-end space-x-2 w-3/4 ml-auto bg-black"
         >
             <p className="text-xs text-neutral-500">Use PHP.</p>
-            <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
+            <div className="h-6 w-6 rounded-full gradient from-pink-500 to-violet-500 flex-shrink-0" />
         </motion.div>
         </motion.div>
     );

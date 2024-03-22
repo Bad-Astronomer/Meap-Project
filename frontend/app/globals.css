@@ -8,11 +8,15 @@
     .meap-header {
         /* font-family: 'Space Mono', monospace; */
         background: linear-gradient(to left, rgb(0, 143, 193), rgb(0, 240, 153), rgb(0, 143, 193), rgb(0, 240, 153));
-
+        
         -webkit-background-clip: text;
         background-clip: text;
-
+        
         color: transparent;
+    }
+    
+    .gradient{
+        background: linear-gradient(-45deg, rgb(0, 143, 193), rgb(0, 240, 153), rgb(0, 143, 193), rgb(0, 240, 153));
     }
 
     .gradient-button{

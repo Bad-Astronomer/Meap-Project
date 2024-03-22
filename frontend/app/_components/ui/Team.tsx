@@ -26,7 +26,7 @@ export const Team = () => {
     {
       id: 3,
       name: "Hinamshu",
-      designation: "Professional Offender",
+      designation: "",
       image: "/assets/himanshu.jpg",
     },
   ];
