@@ -2,93 +2,116 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer components {
-    /* Heading Font  */
-    .meap-header {
-        /* font-family: 'Space Mono', monospace; */
-        background: linear-gradient(to left, rgb(0, 143, 193), rgb(0, 240, 153), rgb(0, 143, 193), rgb(0, 240, 153));
-        
-        -webkit-background-clip: text;
-        background-clip: text;
-        
-        color: transparent;
-    }
-    
-    .gradient{
-        background: linear-gradient(-45deg, rgb(0, 143, 193), rgb(0, 240, 153), rgb(0, 143, 193), rgb(0, 240, 153));
-    }
+  /* Heading Font  */
+  .meap-header {
+    /* font-family: 'Space Mono', monospace; */
+    background: linear-gradient(
+      to left,
+      rgb(0, 143, 193),
+      rgb(0, 240, 153),
+      rgb(0, 143, 193),
+      rgb(0, 240, 153)
+    );
 
-    .gradient-button{
-        position: relative;
-        overflow: hidden;
-    }
-    .gradient-button::before{
-        position: absolute;
-        content: "";
-        background: white;
-        height: 100%;
-        width: 200%;
-        inset: 0 0;
-        z-index: -1;
-    }
-    .gradient-button:hover::before{
-        background: linear-gradient(to right, rgb(0, 143, 193), rgb(0, 240, 153), rgb(0, 143, 193), rgb(0, 240, 153)) 0% 0% / 150% 100%;
-        animation: gradient-button-animation 200ms ease-in;
-    }
+    -webkit-background-clip: text;
+    background-clip: text;
 
-    @keyframes gradient-button-animation {
-        from{
-            background-position: 200%;
-        }
-        to{
-            background-position: 0%;
-        }
-    }
+    color: transparent;
+  }
 
+  .gradient {
+    background: linear-gradient(
+      -45deg,
+      rgb(0, 143, 193),
+      rgb(0, 240, 153),
+      rgb(0, 143, 193),
+      rgb(0, 240, 153)
+    );
+  }
+
+  .gradient-button {
+    position: relative;
+    overflow: hidden;
+  }
+  .gradient-button::before {
+    position: absolute;
+    content: "";
+    background: white;
+    height: 100%;
+    width: 200%;
+    inset: 0 0;
+    z-index: -1;
+  }
+  .gradient-button:hover::before {
+    background: linear-gradient(
+        to right,
+        rgb(0, 143, 193),
+        rgb(0, 240, 153),
+        rgb(0, 143, 193),
+        rgb(0, 240, 153)
+      )
+      0% 0% / 150% 100%;
+    animation: gradient-button-animation 200ms ease-in;
+  }
+
+  .radial-gradient-globe {
+    background: rgb(101, 100, 100);
+    background: radial-gradient(
+      rgba(101, 100, 100, 1) 0%,
+      rgba(2, 0, 36, 1) 50%,
+      rgba(101, 100, 100, 1) 100%
+    );
+    border-radius: 50%;
+  }
+
+  @keyframes gradient-button-animation {
+    from {
+      background-position: 200%;
+    }
+    to {
+      background-position: 0%;
+    }
+  }
 }
 
-
-body{
-    background: linear-gradient(#010110, black, #010110);
+body {
+  background: linear-gradient(#010110, black, #010110);
 }
 
-.stars-bg{
-    background: url('../public/assets/stars-bg.png');
-    background-size: 1300px;
-    background-position: 40%;
+.stars-bg {
+  background: url("../public/assets/stars-bg.png");
+  background-size: 1300px;
+  background-position: 40%;
 }
 
 /* ScrollBar */
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #353535;
+  background: #353535;
 }
 ::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 5px;
+  background: #888;
+  border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #e0e0e0;
+  background: #e0e0e0;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .no-scrollbar::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 /* Hide scrollbar for IE, Edge and Firefox */
 .no-scrollbar {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
-
 
 /* Selection */
 ::selection {
-    background: rgb(32, 32, 32); 
-    color: white; 
+  background: rgb(32, 32, 32);
+  color: white;
 }
-
-

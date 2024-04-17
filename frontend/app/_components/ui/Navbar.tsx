@@ -63,7 +63,7 @@ export const Navbar = () => {
   return (
     <div className="h-20 flex items-center justify-between px-8 text-white border border-neutral-800 border-b-neutral-800 border-x-0 border-t-0 ">
       {/* <div className="flex justify-between"> */}
-      <Link href={"/"} className="font-bold text-xl px-12 meap-header">
+      <Link href={"/home"} className="font-bold text-xl px-12 meap-header">
         Meap
       </Link>
       <NavbarButtons/>
