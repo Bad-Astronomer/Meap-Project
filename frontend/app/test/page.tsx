@@ -17,7 +17,7 @@ export default function GlobeDemo() {
     globeColor: "#062056",
     showAtmosphere: true,
     atmosphereColor: "#FFFFFF",
-    atmosphereAltitude: 0.1,
+    atmosphereAltitude: 0.9,
     emissive: "#062056",
     emissiveIntensity: 0.1,
     shininess: 0.9,
@@ -399,7 +399,7 @@ export default function GlobeDemo() {
   ];
 
   return (
-    <div className="flex w-full gap-0 overflow-hidden">
+    <div className="flex w-full gap-0 overflow-hidden mt-8 ">
         <div className="flex-none w-64 z-10 ">
           <InfiniteCards />
         </div>
@@ -421,11 +421,13 @@ export default function GlobeDemo() {
               className="div"
             >
             </motion.div>
-            <div className="absolute w-full bottom-0 inset-x-0 h-40 z-40 " />
-            <div className="absolute w-full -bottom-20 h-72 md:h-full z-10 ">
+            <div className="absolute w-full inset-x-0 h-40 z-40 " />
+            {/* <div className="relative w-full h-5/6 radial-gradient-globe"> */}
+            <div className="absolute w-full h-full z-10 -right-64">
               <World data={sampleArcs} globeConfig={globeConfig} />;
             </div>
             </div>
+            {/* </div> */}
         </div>
         </div>
     </div>

@@ -22,6 +22,9 @@ module.exports = {
       spacing: {
         '1px': '1px',
       },
+      colors:{
+        'globe-blue':'#040c44',
+      },
       animation: {
         "meteor-effect": "meteor 5s linear infinite",
         scroll:
