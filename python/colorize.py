@@ -12,7 +12,7 @@ from utils.model import create_model, load_state_dict
 
 model = create_model('./models/cldm_v21.yaml').cpu()
 model.load_state_dict(load_state_dict(
-    'lightning_logs/version_6/checkpoints/colorizenet-sd21.ckpt', location='cuda'))
+    '/kaggle/working/Meap-Project/python/colorizenet-sd21.ckpt', location='cuda'))
 model = model.cuda()
 ddim_sampler = DDIMSampler(model)
 
