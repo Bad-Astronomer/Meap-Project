@@ -1,14 +1,22 @@
 from flask import Flask, request, jsonify
 from werkzeug.utils import secure_filename
 import os
+from flask_cors import CORS # Import CORS from flask_cors
+import os
+
+
 
 
 app = Flask(__name__)
+
+# app.config['UPLOAD_FOLDER'] = 'python/uploads/'
 app.config['UPLOAD_FOLDER'] = 'uploads/'
+# Enable CORS for all routes
+CORS(app)
 
 @app.route('/', methods=['GET'])
 def root():
-    return {"Hello": "World"}
+    return {"Hello": os.listdir()}
 
 @app.route('/upload', methods=['POST'])
 def upload_file():

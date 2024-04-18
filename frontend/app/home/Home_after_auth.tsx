@@ -1,24 +1,42 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import axios from 'axios';
+
 
 const Home_after_auth = () => {
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [imageSelected, setImageSelected] = useState(false);
 
-  const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) {
-      alert("Please select an image to upload.");
-      return;
+        alert("Please select an image to upload.");
+        return;
     }
-
+    
     const reader = new FileReader();
-    reader.onload = (e: ProgressEvent<FileReader>) => {
-      if (typeof reader.result === "string") {
-        setPreviewUrl(reader.result);
-        setImageSelected(true);
-      }
+    reader.onload = async (e: ProgressEvent<FileReader>) => {
+        if (typeof reader.result === "string") {
+          setPreviewUrl(reader.result);
+          setImageSelected(true);
+    
+          // Create a FormData object
+          const formData = new FormData();
+          formData.append('file', file);
+    
+          // Send the file to the Flask backend
+          try {
+            const response = await axios.post('http://127.0.0.1:5000/upload', formData, {
+              headers: {
+                'Content-Type': 'multipart/form-data',
+              },
+            });
+            console.log(response.data);
+          } catch (error) {
+            console.error(error);
+          }
+        }
     };
     reader.readAsDataURL(file);
   };
