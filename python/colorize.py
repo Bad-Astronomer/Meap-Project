@@ -1,5 +1,5 @@
 import random
-
+import os
 import cv2
 import einops
 import numpy as np
@@ -17,16 +17,6 @@ model = model.cuda()
 ddim_sampler = DDIMSampler(model)
 
 
-input_image = cv2.imread("sample_data/sample1_bw.jpg")
-input_image = HWC3(input_image)
-img = resize_image(input_image, resolution=512)
-H, W, C = img.shape
-
-num_samples = 1
-control = torch.from_numpy(img.copy()).float().cuda() / 255.0
-control = torch.stack([control for _ in range(num_samples)], dim=0)
-control = einops.rearrange(control, 'b h w c -> b c h w').clone()
-
 
 # seed = random.randint(0, 65535)
 seed = 1294574436
@@ -39,8 +29,16 @@ eta = 0.0
 ddim_steps = 20
 scale = 9.0
 
-def colourize_image(prompt):
-    
+def colourize_image(filename, prompt):
+    input_image = cv2.imread(os.path.join('uploads', filename))
+    input_image = HWC3(input_image)
+    img = resize_image(input_image, resolution=512)
+    H, W, C = img.shape
+
+    num_samples = 1
+    control = torch.from_numpy(img.copy()).float().cuda() / 255.0
+    control = torch.stack([control for _ in range(num_samples)], dim=0)
+    control = einops.rearrange(control, 'b h w c -> b c h w').clone()
     cond = {"c_concat": [control], "c_crossattn": [
         model.get_learned_conditioning([prompt] * num_samples)]}
     un_cond = {"c_concat": None if guess_mode else [control], "c_crossattn": [
