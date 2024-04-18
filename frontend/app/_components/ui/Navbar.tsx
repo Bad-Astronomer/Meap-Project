@@ -3,6 +3,8 @@ import React from "react";
 import Link from "next/link";
 import { cn } from "@/utils/cn";
 import { signIn, signOut, useSession } from "next-auth/react";
+import Image from 'next/image'
+// import { logo } from '/assets/logo.png';
 
 const NavbarButtons = () => {
   const { data: session } = useSession();
@@ -11,7 +13,7 @@ const NavbarButtons = () => {
       <>
       <div className="flex space-x-4">
         <Link href="/home" className="relative items-center flex space-x-1 text-neutral-400 hover:text-white transition-colors duration-200">Home</Link>
-        <Link href="/" className="relative items-center flex space-x-1 text-neutral-400 hover:text-white transition-colors duration-200">Tutorial</Link>
+        <Link href="/tutorial" className="relative items-center flex space-x-1 text-neutral-400 hover:text-white transition-colors duration-200">Tutorial</Link>
         <Link href="/gallery" className="relative items-center flex space-x-1 text-neutral-400 hover:text-white transition-colors duration-200">My Gallery</Link>
         <Link href="/about_us" className="relative items-center flex space-x-1 text-neutral-400 hover:text-white transition-colors duration-200">About Us</Link>
       </div>
@@ -64,7 +66,8 @@ export const Navbar = () => {
     <div className="h-20 flex items-center justify-between px-8 text-white border border-neutral-800 border-b-neutral-800 border-x-0 border-t-0 ">
       {/* <div className="flex justify-between"> */}
       <Link href={"/home"} className="font-bold text-xl px-12 meap-header">
-        Meap
+        <Image src='/logo.png' alt="logo" width={100}
+      height={100} />
       </Link>
       <NavbarButtons/>
     </div>

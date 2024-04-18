@@ -40,7 +40,6 @@ def get_file(name, dst_path = 'uploads'):
     
     return dst_path+'/'+name
 
-asybc def firestore_upload(name, ):
 
 async def firestore_upload(podcast_name, context):
     print('Uploading files to Firebase Firestore...')

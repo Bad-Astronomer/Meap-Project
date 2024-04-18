@@ -35,11 +35,11 @@ export default async function RootLayout({
             navItems={[
               {
                 name: "Home",
-                link: "/home",
+                link: "home",
               },
               {
                 name: "Tutorial",
-                link: "/",
+                link: "tutorial",
               },
               {
                 name: "My Gallery",
