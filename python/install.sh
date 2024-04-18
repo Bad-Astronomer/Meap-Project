@@ -15,4 +15,4 @@ pip install firebase-admin
 pip uninstall torchtext -y
 pip install torchtext
 
-!wget https://huggingface.co/rsortino/ColorizeNet/resolve/main/colorizenet-sd21.ckpt?download=true -P /kaggle/working/Meap-Project/python/
+wget https://huggingface.co/rsortino/ColorizeNet/resolve/main/colorizenet-sd21.ckpt?download=true -P /kaggle/working/Meap-Project/python/
