@@ -16,7 +16,7 @@ CORS(app)
 
 @app.route('/', methods=['GET'])
 def root():
-    return {"Hello": os.listdir('/uploads')}
+    return {"Hello": os.listdir('uploads')}
 
 @app.route('/upload', methods=['POST'])
 def upload_file():
