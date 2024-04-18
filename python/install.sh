@@ -12,6 +12,8 @@ pip install basicsr
 pip install omegaconf
 pip install firebase-admin
 
+pip install flask-cors
+
 pip uninstall torchtext -y
 pip install torchtext
 

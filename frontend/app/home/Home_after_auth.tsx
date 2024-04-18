@@ -27,7 +27,7 @@ const Home_after_auth = () => {
     
           // Send the file to the Flask backend
           try {
-            const response = await axios.post('http://127.0.0.1:5000/upload', formData, {
+            const response = await axios.post(`${process.env.NEXT_PUBLIC_FLASK_URL}/upload`, formData, {
               headers: {
                 'Content-Type': 'multipart/form-data',
               },
