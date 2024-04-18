@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { BentoGridHome } from './BentoGridHome';
+import Pricing from '../_components/ui/Pricing';
 
 const Home_before_auth = () => {
 
@@ -36,6 +37,7 @@ const Home_before_auth = () => {
             </div>
             <div className="mt-5">
                 <BentoGridHome/>
+                <Pricing />
             </div>
         </div>
     )

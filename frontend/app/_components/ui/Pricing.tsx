@@ -3,19 +3,19 @@ import React from "react";
 import '@/app/globals.css'
 
 import { AnimatePresence, motion } from "framer-motion";
-import { CanvasRevealEffect } from "../_components/ui/canvas-reveal-effect";
+import { CanvasRevealEffect } from "./canvas-reveal-effect";
   
-export function page() {
+export function Pricing() {
   return (
     <>
-      <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-black w-full gap-4 mx-auto px-8">
-        <Card title="Himanshu Patil" icon={<AceternityIcon />}>
+      <div className="py-5 flex flex-col lg:flex-row items-center justify-center bg-black max-w-4xl gap-4 m-auto">
+        <Card title="Standard" icon={<AceternityIcon />}>
           <CanvasRevealEffect
-            animationSpeed={5.1}
+            animationSpeed={3}
             containerClassName="bg-emerald-900"
           />
         </Card>
-        <Card title="Kedar Kulkarni" icon={<AceternityIcon />}>
+        <Card title="Premium" icon={<AceternityIcon />}>
           <CanvasRevealEffect
             // animationSpeed={3}
             animationSpeed={5.1}
@@ -30,7 +30,7 @@ export function page() {
           {/* Radial gradient for the cute fade */}
           {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/90" /> */}
         </Card>
-        <Card title="Isha Khandalekar" icon={<AceternityIcon />}>
+        <Card title="Enterprise" icon={<AceternityIcon />}>
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-cyan-800"
@@ -56,12 +56,12 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border group/canvas-card flex items-center justify-center border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative h-[30rem] relative"
+      className="border rounded-xl group/canvas-card flex items-center justify-center border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative h-[30rem] relative"
     >
-      <Icon className="absolute h-6 w-6 -top-3 -left-3 text-white" />
+      {/* <Icon className="absolute h-6 w-6 -top-3 -left-3 text-white" />
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 text-white" />
       <Icon className="absolute h-6 w-6 -top-3 -right-3 text-white" />
-      <Icon className="absolute h-6 w-6 -bottom-3 -right-3 text-white" />
+      <Icon className="absolute h-6 w-6 -bottom-3 -right-3 text-white" /> */}
 
       <AnimatePresence>
         {hovered && (
@@ -79,7 +79,7 @@ const Card = ({
         <div className="text-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0 transition duration-200 w-full  mx-auto flex items-center justify-center">
           {icon}
         </div>
-        <h2 className="text-white text-xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
+        <h2 className="text-white text-xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
           {title}
         </h2>
       </div>
@@ -126,4 +126,4 @@ const Icon = ({ className, ...rest }: any) => {
 };
 
 
-export default page
+export default Pricing
