@@ -5,7 +5,8 @@ app = Flask(__name__)
 @app.route('/colorize', methods=['POST'])
 def colorize(prompt):
     prompt = request.form.get('prompt')
-    result = colourize_image(prompt=prompt)
+    filname = request.files['filename']
+    result = colourize_image(filename=filname, prompt=prompt)
     return result
 
 if __name__ == '__main__':
