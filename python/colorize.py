@@ -10,7 +10,7 @@ from utils.data import HWC3, apply_color, resize_image
 from utils.ddim import DDIMSampler
 from utils.model import create_model, load_state_dict
 
-model = create_model('./models/cldm_v21.yaml').cpu()
+model = create_model('/kaggle/working/Meap-Project/python/cldm_v21.yaml').cpu()
 model.load_state_dict(load_state_dict(
     '/kaggle/working/Meap-Project/python/colorizenet-sd21.ckpt', location='cuda'))
 model = model.cuda()
