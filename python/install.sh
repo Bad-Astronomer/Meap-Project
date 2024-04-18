@@ -12,5 +12,5 @@ pip install basicsr
 pip install omegaconf
 pip install firebase-admin
 
-!pip uninstall torchtext -y
-!pip install torchtext
+pip uninstall torchtext -y
+pip install torchtext
