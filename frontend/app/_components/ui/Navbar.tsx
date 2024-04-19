@@ -63,11 +63,10 @@ const NavbarButtons = () => {
 
 export const Navbar = () => {
   return (
-    <div className="h-20 flex items-center justify-between px-8 text-white border border-neutral-800 border-b-neutral-800 border-x-0 border-t-0 ">
+    <div className="h-20 flex items-center justify-between text-white border border-neutral-800 border-b-neutral-800 border-x-0 border-t-0 ">
       {/* <div className="flex justify-between"> */}
-      <Link href={"/home"} className="font-bold text-xl px-12 meap-header">
-        <Image src='/logo.png' alt="logo" width={100}
-      height={100} />
+      <Link href={"/home"} className="font-bold text-xl meap-header">
+        <Image src='/assets/logo.png' alt="logo" width={75} height={75} className="ml-1 mt-1"/>
       </Link>
       <NavbarButtons/>
     </div>

@@ -53,7 +53,7 @@ export function page() {
     },
   ];
   return (
-    <div className="p-10">
+    <div className="p-8">
       <StickyScroll content={content} />
     </div>
   );

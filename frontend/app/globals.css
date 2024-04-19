@@ -64,6 +64,11 @@
     border-radius: 50%;
   }
 
+  .gemini-button{
+    top: 85%;
+    left: 80%;
+  }
+
   @keyframes gradient-button-animation {
     from {
       background-position: 200%;
