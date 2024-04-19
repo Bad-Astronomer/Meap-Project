@@ -6,51 +6,55 @@ import Image from "next/image";
 export function page() {
   const content = [
     {
-      title: "Collaborative Editing",
+      title: "Bring Black & White Photos to Life",
       description:
-        "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+        "Transform your black and white photos with AI-powered colorization. Upload your image and provide detailed prompts to achieve your desired color scheme using Stable Diffusion and ControlNet technologies.",
       content: (
         <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-          Collaborative Editing
+          Colorize with AI
         </div>
       ),
     },
     {
-      title: "Real time changes",
+      title: "Fine-tune with Prompts",
       description:
-        "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
-      content: (
-        <div className="h-full w-full  flex items-center justify-center text-white">
-          <Image
-            src="/linear.webp"
-            width={300}
-            height={300}
-            className="h-full w-full object-cover"
-            alt="linear board demo"
-          />
-        </div>
-      ),
-    },
-    {
-      title: "Version control",
-      description:
-        "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+        "Go beyond basic colorization! Craft detailed prompts to guide the AI towards your vision. Specify colors, textures, and styles for a truly customized result.",
       content: (
         <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-          Version control
+          Prompt Tuning for Image Colorization
+        </div>
+        // <div className="h-full w-full flex items-center justify-center text-white">
+        //   <Image
+        //     src="/prompt-tuning.svg" // Replace with an image representing prompt tuning (optional)
+        //     width={300}
+        //     height={300}
+        //     className="h-full w-full object-cover"
+        //     alt="Prompt tuning for image colorization"
+        //   />
+        // </div>
+      ),
+    },
+    {
+      title: "Powered by Stable Diffusion & ControlNet",
+      description:
+        "Leverage the cutting-edge capabilities of Stable Diffusion and ControlNet models. These AI models generate high-quality colorizations faithful to your artistic vision.",
+      content: (
+        <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+          Stable Diffusion & ControlNet
         </div>
       ),
     },
     {
-      title: "Running out of content",
+      title: "Unleash Creativity",
       description:
-        "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+        "Breathe new life into your black and white photos. Explore endless possibilities with AI-powered colorization and bring your creative vision to reality.",
       content: (
-        <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-          Running out of content
+        <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
+          Unleash Creativity
         </div>
       ),
     },
+    
   ];
   return (
     <div className="p-8">

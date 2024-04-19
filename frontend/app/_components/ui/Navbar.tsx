@@ -34,7 +34,7 @@ const NavbarButtons = () => {
     <>
       <div className="flex space-x-4">
         <Link href="/home" className="relative items-center flex space-x-1 text-neutral-400 hover:text-white transition-colors duration-200">Home</Link>
-        <Link href="/" className="relative items-center flex space-x-1 text-neutral-400 hover:text-white transition-colors duration-200">Tutorial</Link>
+        <Link href="/tutorial" className="relative items-center flex space-x-1 text-neutral-400 hover:text-white transition-colors duration-200">Tutorial</Link>
         <Link href="/gallery" className="relative items-center flex space-x-1 text-neutral-400 hover:text-white transition-colors duration-200">Gallery</Link>
         <Link href="/about_us" className="relative items-center flex space-x-1 text-neutral-400 hover:text-white transition-colors duration-200">About Us</Link>
       </div>
@@ -63,10 +63,11 @@ const NavbarButtons = () => {
 
 export const Navbar = () => {
   return (
-    <div className="h-20 flex items-center justify-between text-white border border-neutral-800 border-b-neutral-800 border-x-0 border-t-0 ">
+    <div className="h-20 px-5 flex items-center justify-between text-white border border-neutral-800 border-b-neutral-800 border-x-0 border-t-0 ">
       {/* <div className="flex justify-between"> */}
-      <Link href={"/home"} className="font-bold text-xl meap-header">
-        <Image src='/assets/logo.png' alt="logo" width={75} height={75} className="ml-1 mt-1"/>
+      <Link href={"/home"} className="font-semibold text-xl meap-header pr-20">
+        {/* <Image src='/assets/logo.png' alt="logo" width={50} height={50} className="ml-1 mt-1"/> */}
+        MEAP
       </Link>
       <NavbarButtons/>
     </div>
