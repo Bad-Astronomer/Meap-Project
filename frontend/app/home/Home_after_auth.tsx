@@ -53,9 +53,12 @@ const Home_after_auth = () => {
               'Content-Type': 'multipart/form-data',
             },
           });
+
+          setPreviewUrl(`${process.env.NEXT_PUBLIC_FLASK_URL}/result/${response.data.filename}`);
           console.log(response.data);
         } catch (error) {
           console.error(error);
+          alert(error.response.data['error']);
         }
   };
 
