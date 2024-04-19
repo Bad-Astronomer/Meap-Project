@@ -58,7 +58,6 @@ def colourize_image(filename, prompt):
 
     results = [x_samples[i] for i in range(num_samples)]
     colored_results = [apply_color(img, result) for result in results]
-    file_list = []
     for i, result in enumerate(colored_results):
         present_file= sorted(os.listdir('/kaggle/working/Meap-Project/python/results'))
         if present_file:
@@ -67,5 +66,4 @@ def colourize_image(filename, prompt):
         
         file_name = f"/kaggle/working/Meap-Project/python/results/colorized_{i}.jpg"
         cv2.imwrite(file_name, cv2.cvtColor(result, cv2.COLOR_RGB2BGR))
-        file_list.append(file_name)
-    return file_list
+    return file_name
