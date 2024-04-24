@@ -2,8 +2,8 @@
 A Third Year Mini Project.
 
 ### Tech Stack:
-Frontend : <code>Next Js</code>, <code>Tailwind</code>
-Backend  : <code>Flask</code>
+Frontend : <code>Next Js</code>, <code>Tailwind</code>  
+Backend  : <code>Flask</code>  
 Deep Learning Framework : <code>PyTorch</code>  
 
 ## Problem Statement:
