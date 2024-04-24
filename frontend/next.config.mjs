@@ -7,7 +7,7 @@ const nextConfig = {
         //         hostname: process.env.NEXT_PUBLIC_FLASK_URL,
         //     },
         // ]
-        domains: [process.env.NEXT_PUBLIC_FLASK_URL.replace(/^https?:\/\//,'')],
+        domains: ["himanshupatil2456-5513e938-20fa-49b0-8af4-da5df8af3d67.socketxp.com"],
     }
 };
 

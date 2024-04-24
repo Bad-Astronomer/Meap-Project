@@ -78,7 +78,7 @@ const Home_after_auth = () => {
         `${process.env.NEXT_PUBLIC_FLASK_URL}/result/${response.data.filename}`
       );
       console.log(response.data);
-    } catch (error) {
+    } catch (error: any) {
       console.error(error);
       alert(error.response.data["error"]);
     }
