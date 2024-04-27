@@ -15,10 +15,10 @@ The landscape of image colorization tools is populated with solutions that predo
 ### 16010121141 - Himanshu Patil
 
 ## Features:
-● Develop a diffusion-based generative model for accurate and vibrant colorization of black and white images.
-● Integrate a user-friendly web application with features for seamless image upload, optional text prompt input for guided colorization, and real-time colorization preview.
-● Enhance the model to support object-level color control, allowing users to influence specific elements within the image through optional text prompts.
-● Train the model on a diverse dataset to adapt to various image types and styles, with a specific focus on maintaining structural integrity during colorization.
-● Conduct thorough testing and validation, emphasizing the visual quality, color fidelity, and diversity of colorization options, with a specific focus on the impact of user-provided text prompts on the results.
+● Develop a diffusion-based generative model for accurate and vibrant colorization of black and white images.  
+● Integrate a user-friendly web application with features for seamless image upload, optional text prompt input for guided colorization, and real-time colorization preview.  
+● Enhance the model to support object-level color control, allowing users to influence specific elements within the image through optional text prompts.  
+● Train the model on a diverse dataset to adapt to various image types and styles, with a specific focus on maintaining structural integrity during colorization.  
+● Conduct thorough testing and validation, emphasizing the visual quality, color fidelity, and diversity of colorization options, with a specific focus on the impact of user-provided text prompts on the results.  
 
 
